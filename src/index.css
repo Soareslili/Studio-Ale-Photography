@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inknut+Antiqua:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+US+Modern:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins&family=Road+Rage&family=Roboto&family=Sora:wght@100..800&display=swap');
+
+
+@import "tailwindcss";
+
+
+ :root {
+    /* Noir Photography Brand Colors */
+    --background: 219 20% 6%;          /* #0B0C10 */
+    --surface: 218 15% 9%;             /* #121317 */
+    --surface-elevated: 216 13% 12%;   /* #1E2128 */
+    --foreground: 220 13% 91%;         /* #E5E7EB */
+    --foreground-muted: 220 9% 66%;    /* #9CA3AF */
+    
+    /* Brand Accent Colors */
+    --gold: 44 53% 53%;                /* #C8A24A */
+    --gold-dark: 44 53% 43%;           /* Darker gold for hover */
+    --blue-accent: 201 62% 59%;        /* #5FA8D3 */
+    
+    /* Semantic Color Mapping */
+    --card: var(--surface);
+    --card-foreground: var(--foreground);
+    --popover: var(--surface-elevated);
+    --popover-foreground: var(--foreground);
+    
+    --primary: var(--gold);
+    --primary-foreground: var(--background);
+    --primary-dark: var(--gold-dark);
+    
+    --secondary: var(--surface-elevated);
+    --secondary-foreground: var(--foreground);
+    
+    --muted: var(--surface-elevated);
+    --muted-foreground: var(--foreground-muted);
+    
+    --accent: var(--blue-accent);
+    --accent-foreground: var(--foreground);
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--foreground);
+    
+    --border: var(--surface-elevated);
+    --input: var(--surface-elevated);
+    --ring: var(--gold);
+    
+    --radius: 1rem;
+    
+    /* Custom Design Tokens */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-dark)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--background)), hsl(var(--surface)));
+    --shadow-elegant: 0 20px 40px -12px hsl(var(--background) / 0.8);
+    --shadow-gold: 0 0 30px hsl(var(--gold) / 0.15);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Typography Scale */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
