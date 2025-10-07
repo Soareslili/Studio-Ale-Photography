@@ -1,5 +1,7 @@
 "use client";
 
+import AOSInit from "../AOSInit";
+
 
 
 
@@ -14,29 +16,57 @@ import { cn } from "../../lib/utils";
 export const ShuffleHero = () => {
   return (
     <section className="w-full px-6 md:px-8 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl mx-auto">
-   
+
+      <AOSInit />
+
       <div className="text-center md:text-left">
-        <h3 className="text-4xl md:text-6xl leading-tight font-semibold text-white/90">
+        <h3 className="text-4xl md:text-6xl leading-tight font-semibold text-white/90"
+          data-aos="fade-right"
+          data-aos-delay="200"
+           data-aos-duration="1000"
+        >
           Hi! I'm <span className="font-extrabold text-[#C8A24A]">Alexandre</span>, a photographer.
         </h3>
 
-        <p className="mt-4 text-sm md:text-base text-white/70">
-          Editorial <span className="mx-2">•</span> Weddings <span className="mx-2">•</span> Portraits
-          <span className="mx-2">•</span> Commercial
+        <p className="mt-4 text-sm md:text-base text-white/70 flex flex-wrap justify-center md:justify-start">
+          {[
+            "Editorial",
+            "Weddings",
+            "Portraits",
+            "Commercial",
+          ].map((item, idx) => (
+            <span
+              key={item}
+              data-aos="fade-up"
+              data-aos-delay={400 + idx * 300}
+              data-aos-duration="800"
+              className="flex items-center"
+            >
+              {item}
+           
+              {idx < 3 && <span className="mx-2">•</span>}
+            </span>
+          )
+          )}
         </p>
 
-        <p className="mt-6 text-base md:text-lg text-white/70 max-w-xl md:max-w-2xl mx-auto md:mx-0">
+
+        <p className="mt-6 text-base md:text-lg text-white/70 max-w-xl md:max-w-2xl mx-auto md:mx-0"
+          data-aos="fade-right"
+          data-aos-delay="1000"
+           data-aos-duration="1000"
+        >
           Fotografia é contar histórias com luz. Trabalho com retratos, casamentos e campanhas
           editoriais, criando imagens que capturam momentos únicos e emoções genuínas.
         </p>
-
 
         <div className="mt-8 flex flex-wrap items-center gap-4 justify-center md:justify-start">
           <a
             href="#portfolio"
             className={cn(
               "inline-flex items-center justify-center h-11 px-5 rounded-xl font-medium",
-              "transition-all hover:brightness-110 active:scale-95",
+              "transition-all hover:bg-black hover:text-[#C8A24A] active:scale-95",
+              "hover:border transition-colors",
               "text-black bg-[#C8A24A]"
             )}
             aria-label="Ver Portfólio"
@@ -59,13 +89,26 @@ export const ShuffleHero = () => {
         </div>
 
 
-        <div className="mt-10 grid grid-cols-3 sm:grid-cols-6 gap-6">
-          <IconItem icon={Heart} label="Portraits" />
-          <IconItem icon={Users} label="Weddings" />
-          <IconItem icon={PenLine} label="Editorial" />
-          <IconItem icon={Briefcase} label="Commercial" />
-          <IconItem icon={Calendar} label="Events" />
-          <IconItem icon={Mountain} label="Landscape" />
+        <div
+          className="mt-10 grid grid-cols-3 sm:grid-cols-6 gap-6"
+        >
+          {[
+            { icon: Heart, label: "Portraits" },
+            { icon: Users, label: "Weddings" },
+            { icon: PenLine, label: "Editorial" },
+            { icon: Briefcase, label: "Commercial" },
+            { icon: Calendar, label: "Events" },
+            { icon: Mountain, label: "Landscape" },
+          ].map((item, idx) => (
+            <div
+              key={item.label}
+              data-aos="fade-up"
+              data-aos-delay={idx * 400}
+              data-aos-duration="600"
+            >
+              <IconItem icon={item.icon} label={item.label} />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -142,7 +185,7 @@ const ShuffleGrid = () => {
   const shuffleSquares = () => setSquares(generateSquares());
 
   useEffect(() => {
-   
+
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReduced) return;
 

@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import Logo from '../assets/Logo.png'
 
 const LINKS = [
-  { href: "#Sobre", label: "About" },
+  { href: "#about", label: "About" },
   { href: "#Serviços", label: "Services" },
   { href: "#Portfolio", label: "Portfolio" },
   { href: "#Depoimentos", label: "Testimonials" },
