@@ -5,7 +5,7 @@ import Logo from '../assets/Logo.png'
 
 const LINKS = [
   { href: "#about", label: "About" },
-  { href: "#Serviços", label: "Services" },
+  { href: "#Servicos", label: "Services" },
   { href: "#Portfolio", label: "Portfolio" },
   { href: "#Depoimentos", label: "Testimonials" },
   { href: "#Contato", label: "Contact" },

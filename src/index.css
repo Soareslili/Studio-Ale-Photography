@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inknut+Antiqua:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+US+Modern:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins&family=Road+Rage&family=Roboto&family=Sora:wght@100..800&display=swap');
 
+@import "tailwindcss";
 
 @import "tailwindcss";
+@import "tw-animate-css";
+
+.dark {
+  --muted-foreground: var(--light-100);
+}
+
 
 
  :root {

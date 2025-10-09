@@ -34,7 +34,7 @@ const About = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
                         </div>
 
-                        {/* Floating Stats Card */}
+                      
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}

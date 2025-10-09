@@ -62,7 +62,7 @@ export const ShuffleHero = () => {
 
         <div className="mt-8 flex flex-wrap items-center gap-4 justify-center md:justify-start">
           <a
-            href="#portfolio"
+            href="#Portfolio"
             className={cn(
               "inline-flex items-center justify-center h-11 px-5 rounded-xl font-medium",
               "transition-all hover:bg-black hover:text-[#C8A24A] active:scale-95",
