@@ -40,7 +40,7 @@ const About = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                             viewport={{ once: true }}
-                            className="absolute -bottom-8 -right-8 bg-[#0B0C10] rounded-2xl p-6 shadow-elegant"
+                            className="absolute -bottom-8 -right-2 bg-[#0B0C10] rounded-2xl p-6 shadow-elegant"
                         >
                             <div className="grid grid-cols-2 gap-4">
                                 {stats.map((stat, index) => (

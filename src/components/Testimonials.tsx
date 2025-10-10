@@ -4,7 +4,7 @@
 
 const Testimonials = () => {
     return(
-        <section className="py-20 bg-[#0B0C10]">
+        <section id="Depoimentos" className="py-20 bg-[#0B0C10]">
             <TestimonialSlider/>
         </section>
     )

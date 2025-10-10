@@ -2,9 +2,6 @@
 
 @import "tailwindcss";
 
-@import "tailwindcss";
-@import "tw-animate-css";
-
 .dark {
   --muted-foreground: var(--light-100);
 }
